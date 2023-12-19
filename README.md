@@ -1,34 +1,14 @@
-# Greeting Card
-
-## Project Overview
-In this project you will apply JavaScript to the DOM to create a greeting card on an HTML page.  
-
-## Objectives
-
-- [ ] Create HTML elements
-- [ ] Use JavaScript to manipulate HTML elements
-- [ ] Use variables to manage data
-
-## Specifications
-
-Create a Greeting Card on an HTML page.  Your Greeting Card should include at least 10 different HTML elements.  You must use JavaScript (only) to create and manipulate your elements in such a way that they come together to clearly resemble a picture.   Your Greeting Card should include a variety of colors (at least 5), text, an image, and music. 
-
-## Your Tasks
-
-- [ ] Locate the index.html page.  Here you will create the basic elements for your page.  You must include at least 10 different elements. 
-- [ ] Locate the App.js file.  Write code to manipulate the elements on your index.html page
-- [ ] Include music with your GreetingCard.  Below is an example of how to do this, 
-
-```
-var au = new Audio("Music/AllIWantForChristmas.mp3");
-au.controls = true;
-document.body.appendChild(au);
-```
-
-- [ ] Document your code thoroughly as you go with comments
-- [ ] Complete the required README using specified guidelines
-
-## Grade your project before you submit
-
-- [ ] Before you submit your project, grade your project against the criteria below. 
-	[Rubric.md](Rubric.md)
+# Project 2: Greeting card
+Yael G
+AP CS A
+Winter 2023
+# Overview
+This Java application displays an animate moons of two different kinds, Elfs, snow, fireplace and a lot of different colors.
+## Compiling and Using
+To compile, execute the following command in the main project directory:
+index.html, once you open that, the program would appear. My program is a greeting card for the holiday season, Enjoy viewing it!
+## Discussion
+The problems that I had was putting the elements in order so they all appear on the screen. I had to research some of the information that I didn't exactly remember, and other styles that we haven't learned yet. The errors that I had were simple it just took me a bit to find the error with all of the code. I think I would apply what I learned in this project to future projects. The parts of the project that I found challenging was to change the order of elements and to figure out how to change it, I found out that you need to use the z-Index in order to change it. I don't think I would change anything about the project. The process that I went through to create the program is first reviewing the code from before, thinking about the design of the card, testing new things and if they work,  starting on the greeting card and finishing it. The problems that I had was putting the elements in order so they all appear on the screen. I had to research some of the information that I didn't exactly remember, and other styles that we haven't learned yet. The errors that I had were simple it just took me a bit to find the error with all of the code. I think I would apply what I learned in this project to future projects. The parts of the project that I found challenging was to change the order of elements and to figure out how to change it, I found out that you need to use the z-Index in order to change it. I don't think I would change anything about the project. The process that I went through to create the program is first reviewing the code from before, thinking about the design of the card, testing new things and if they work, 
+## Testing
+I tested my project by looking at the code back and forth checking everything is right. Show to my peers to see what they think what I should make better or change.
+## Extra credit
