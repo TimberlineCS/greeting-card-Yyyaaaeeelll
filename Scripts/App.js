@@ -1,175 +1,296 @@
-//Yael
-//1st 
-//Decemeber 12 2023
 
-/*Provide a description about what this program does here*/
+let footballPlayers = ["William", "Charles", "Henry", "James", "Thomas", "Noah"];
 
-/*Write code to create and manipulate the elements on the index.html page.  
-The elements must come to gether to resemble an image.  Your Greeting Card
-must also include text, an image, and music. */
+var williamGoals = 0;
+var charlesGoals = 0;
+var henryGoals = 0;
+var jamesGoals = 0;
+var thomasGoals = 0;
+var noahGoals = 0;
+var yellowCardCount = 0;
+var redCardCount = 0;
 
-document.body.style.backgroundColor = "#AA0000";
+var userInput;
+var userInputSearch;
+  var button = document.createElement("button");
+    button.style.top = "100px";
+  button.style.right = "950px";
+  button.style.width = "300px";
+  button.style.height = "100px";
+  button.style.position = "absolute";
+  button.innerHTML="Goal!!";
+
+  button.addEventListener('click', function() {
+    userInput = prompt('Who scored the goal?');
+    console.log(userInput);
+  });
+
+  document.body.append(button);
 
 
-var background = document.createElement("div"); 
-var hat = document.createElement("div");
-var head = document.createElement("div") 
-var hatTwo = document.createElement("div");
-var headTwo = document.createElement("div") 
+//second
+
+var buttonTwo = document.createElement("button");
+buttonTwo.style.top = "250px";
+buttonTwo.style.right = "950px";
+buttonTwo.style.width = "300px";
+buttonTwo.style.height = "100px";
+buttonTwo.style.position = "absolute";
+buttonTwo.innerHTML="Foul";
+
+buttonTwo.addEventListener('click', function() {
+const userInputTwo = prompt('Who fouled?');
+console.log(userInputTwo);
+});
+
+document.body.append(buttonTwo);
+
+//third
+
+var buttonThree = document.createElement("button");
+buttonThree.style.top = "450px";
+buttonThree.style.right = "950px";
+buttonThree.style.width = "300px";
+buttonThree.style.height = "100px";
+buttonThree.style.position = "absolute";
+buttonThree.innerHTML="Yellow card";
+
+buttonThree.addEventListener('click', function() {
+var userInputThree = prompt('Who got a yellow card?');
+yellowCardCount = yellowCardCount + userInputThree;
+yellowCount.innerHTML = "Yellow card count: " + yellowCardCount;
+
+
+console.log(userInputThree);
+
+});
+
+document.body.append(buttonThree);
+//yellow count
+var yellowCount = document.createElement("div"); 
+
+yellowCount.innerHTML = "Yellow card count: ";
+yellowCount.style.top = "570px";
+yellowCount.style.right = "1100px";
+yellowCount.style.position = "absolute";
+yellowCount.style.color = "black";
+yellowCount.style.fontSize = "1em";
+yellowCount.style.fontFamily = "Candela";
+document.body.append(yellowCount);
+
+//four
+
+var orangeCount = document.createElement("div"); 
+orangeCount.innerHTML = "RED card count: ";
+orangeCount.style.top = "770px";
+orangeCount.style.right = "1100px";
+orangeCount.style.position = "absolute";
+orangeCount.style.color = "black";
+orangeCount.style.fontSize = "1em";
+orangeCount.style.fontFamily = "Candela";
+document.body.append(orangeCount);
+
+var buttonFour = document.createElement("button");
+buttonFour.style.top = "650px";
+buttonFour.style.right = "950px";
+buttonFour.style.width = "300px";
+buttonFour.style.height = "100px";
+buttonFour.style.position = "absolute";
+buttonFour.innerHTML="Red card";
+
+buttonFour.addEventListener('click', function() {
+const userInputFour = prompt('Who got a RED card?');
+redCardCount = redCardCount + userInputFour;
+orangeCount.innerHTML = "RED card count: " + redCardCount;
+console.log(userInputFour);
+});
+
+document.body.append(buttonFour);
+document.body.style.backgroundColor = "#98eb86";
+
 var text = document.createElement("div"); 
-var eye = document.createElement("div");
+var background = document.createElement("div"); 
 
-background.style.width = "98%";
-background.style.backgroundColor = "#AA0000";
-background.style.padding = "30px";
-background.style.radius = "50px";
+text.innerHTML = "Home: ";
+text.style.top = "70px";
+text.style.right = "400px";
+text.style.position = "absolute";
+text.style.color = "black";
+text.style.fontSize = "2em";
+text.style.fontFamily = "Candela";
 
-text.innerHTML = "Happy Holidays!";
+// //two
+var text_two = document.createElement("div"); 
 
-text.style.background = "#AA0000";
+text_two.innerHTML = "Visting: ";
 
-text.style.color = "white";
 
-text.style.textAlign = "center";
+    text_two.style.top = "270px";
+    text_two.style.right = "400px";
+    text_two.style.position = "absolute";
 
-text.style.fontSize = "6em";
+text_two.style.color = "black";
 
-text.style.fontFamily = "fantasy";
+text_two.style.fontSize = "2em";
 
-hat.style.width = "0px";
+text_two.style.fontFamily = "Candela";
+//three
+var textThree = document.createElement("div"); 
+textThree.innerHTML = "William, Charles, Henry ";
+textThree.style.top = "120px";
+textThree.style.right = "330px";
+textThree.style.position = "absolute";
+textThree.style.color = "black";
+textThree.style.fontSize = "1em";
+textThree.style.fontFamily = "Candela";
+document.body.append(textThree);
 
-hat.style.height = "0px";
+//four
+var textFour = document.createElement("div"); 
+textFour.innerHTML = "James, Thomas, Noah ";
+textFour.style.top = "320px";
+textFour.style.right = "330px";
+textFour.style.position = "absolute";
+textFour.style.color = "black";
+textFour.style.fontSize = "1em";
+textFour.style.fontFamily = "Candela";
+document.body.append(textFour);
 
-hat.style.border = "transparent solid 50px";
+//five
+var textFive = document.createElement("div"); 
+textFive.innerHTML = " ";
+textFive.style.top = "470px";
+textFive.style.right = "270px";
+textFive.style.position = "absolute";
+textFive.style.color = "black";
+textFive.style.fontSize = "1em";
+textFive.style.fontFamily = "Candela";
+document.body.append(textFive);
 
-hat.style.border.BottomWidth = "200px";
+//six
+var textSix = document.createElement("div"); 
+textSix.innerHTML = "Match Stats Manager";
+textSix.style.top = "50px";
+textSix.style.right = "100px";
+textSix.style.color = "black";
+textSix.style.fontSize = "4em";
+textSix.style.fontFamily = "Candela";
+document.body.append(textSix);
 
-hat.style.borderBottomColor = "red";
 
-hat.style.margin = "0 auto";
 
-hat.style.position = "relative";
+//search up
+var search = document.createElement("button");
+search.style.top = "450px";
+search.style.right = "450px";
+search.style.width = "200px";
+search.style.height = "70px";
+search.style.position = "absolute";
+search.innerHTML="Search up player";
 
-hat.style.top = "15px";
-head.style.width = "100px";
+search.addEventListener('click', function() {
+    userInputSearch = prompt('What player are you searching up?');
+    console.log(userInputSearch);
+    if (userInputSearch === "William") {
+    textFive.innerHTML = userInputSearch +" scored " + williamGoals +" goals";
+  }
 
-head.style.height = "100px"
+  if (userInputSearch === "Charles") {
+    textFive.innerHTML = userInputSearch +" scored " + charlesGoals +" goals";
+  }
 
-head.style.borderRadius = "50%";
+  if (userInputSearch === "Henry") {
+    textFive.innerHTML = userInputSearch +" scored " + henryGoals +" goals";
+  }
 
-head.style.backgroundColor = "tan";
+  if (userInputSearch === "James") {
+    textFive.innerHTML = userInputSearch +" scored " + jamesGoals +" goals";
+  }
 
-head.style.margin = "0 auto";
+  if (userInputSearch === "Thomas") {
+    textFive.innerHTML = userInputSearch +" scored " + thomasGoals +" goals";
+  }
+
+  if (userInputSearch === "Noah") {
+    textFive.innerHTML = userInputSearch +" scored " + noahGoals +" goals";
+  }
+});
+
+  document.body.append(search);
+
 
 document.body.append(text);
+document.body.append(text_two);
+
 document.body.append(background);
-document.body.append(hat);
-document.body.append(head);
 
- //
-hatTwo.style.width = "0px";
 
-hatTwo.style.height = "0px";
+var visitScore = 0;
+text_two.innerHTML = "Visiting: " + visitScore;
 
-hatTwo.style.border = "transparent solid 50px";
+var homeScore = 0;
+button.addEventListener('click', function() {
+    if (userInput === "William") {
+  homeScore = homeScore + 1;
+  williamGoals = williamGoals + 1;
+  visitScore = visitScore + 0;
+  text.innerHTML = "Home: " + homeScore;
+console.log("Home set + 1");
+    }
 
-hatTwo.style.border.BottomWidth = "200px";
+if (userInput === "Henry") {
+    homeScore = homeScore + 1;
+    henryGoals = henryGoals + 1;
+    visitScore = visitScore + 0;
+    text.innerHTML = "Home: " + homeScore;
+  console.log("Home set + 1");
+  
+}
+if (userInput === "Charles") {
+    homeScore = homeScore + 1;
+    charlesGoals = charlesGoals + 1;
+    visitScore = visitScore + 0;
+    text.innerHTML = "Home: " + homeScore;
+  console.log("Home set + 1");
+  
+}
 
-hatTwo.style.borderBottomColor = "red";
+});
 
-hatTwo.style.margin = "0 auto";
 
-hatTwo.style.position = "relative";
+button.addEventListener('click', function() {
+if (userInput === "James") {
+    visitScore = visitScore + 1;
+    jamesGoals = jamesGoals + 1;
+    homeScore = homeScore + 0;
+    text_two.innerHTML = "Visiting: " + visitScore;
+  console.log("Visit set + 1");
+  
+}
 
-hatTwo.style.top = "15px";
+if (userInput === "Thomas") {
+    visitScore = visitScore + 1;
+    thomasGoals = thomasGoals + 1;
+    homeScore = homeScore + 0;
+    text_two.innerHTML = "Visiting: " + visitScore;
+  console.log("Visit set + 1");
+  
+}
 
-headTwo.style.width = "100px";
+if (userInput === "Noah") {
+    visitScore = visitScore + 1;
+    noahGoals = noahGoals + 1;
+    homeScore = homeScore + 0;
+    text_two.innerHTML = "Visiting: " + visitScore;
+  console.log("Visit set + 1");
+  
+}
 
-headTwo.style.height = "100px"
+});
 
-headTwo.style.borderRadius = "50%";
 
-headTwo.style.backgroundColor = "tan";
+var fouls = 0;
+var yellow = 0;
+var red = 0;
 
-headTwo.style.margin = "0 auto";
 
-document.body.append(text);
-document.body.append(background);
-document.body.append(hatTwo);
-document.body.append(headTwo);
-
-var au = new Audio("Music/AllIWantForChristmas.mp3");
-au.controls = true;
-au.style.zIndex = 5;
-document.body.appendChild(au);
-//second person ends here
-
-//Fire
-var fire = document.createElement("img") ;
-fire.src = "Images/fire.gif" ;  
-fire.style.width = "980px";
-fire.style.height = "90px";
-fire.style.position = "absolute";
-fire.style.top = "360px";
-fire.style.left = "100px";
-document.body.append(fire);
-
-//Moons
-var moon = document.createElement("img") ;
-moon.src = "Images/moon.gif" ;  
-moon.style.width = "160px";
-moon.style.height = "160px";
-moon.style.position = "absolute";
-moon.style.top = "45px";
-moon.style.left = "1070px";
-document.body.append(moon);
-
-var moonTwo = document.createElement("img") ;
-moonTwo.src = "Images/moon2.gif" ;  
-document.body.append(moonTwo);
-moonTwo.style.width = "150px";
-moonTwo.style.height = "150px";
-moonTwo.style.position = "absolute";
-moonTwo.style.top = "50px";
-moonTwo.style.left = "50px";
-
-//Snow
-var snow = document.createElement("img") ;
-snow.src = "Images/FallingSnowTransparent.gif" ;  
-snow.style.position = "absolute";
-snow.style.top = "10px";
-snow.style.left = "10px";
-snow.style.width = "1300px";
-snow.style.height = "1300px";
-snow.style.zIndex = -1;
-document.body.append(snow);
-
-//elf
-var elf = document.createElement("img") ;
-elf.src = "Images/elf.gif" ;  
-elf.style.position = "absolute";
-elf.style.top = "300px";
-elf.style.left = "970px";
-elf.style.width = "400px";
-elf.style.height = "400px";
-document.body.append(elf);
-
-//Border
-document.body.style.border = "dotted";
-document.body.style.borderColor = "green";
-document.body.style.width = "%100";
-document.body.style.height = "%300";
-document.body.style.borderWidth = "2em";
-
-//box
-var box = document.createElement("div");
-box.style.width = "50px";
-box.style.height = "50px";
-box.style.border = "white solid 5px";
-box.style.backgroundColor = "#6fdb27"
-box.style.top = "534px";
-box.style.left = "615px";
-box.style.borderRadius = "20%"
-box.id = "box";
-box.style.position = "absolute";
-document.body.append(box);
